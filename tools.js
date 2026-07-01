@@ -127,8 +127,8 @@ const kitLinks = {
   },
   "PDF": {
     label: "PDF Utility Kit",
-    price: "$7 planned",
-    url: "mailto:zzd050131@gmail.com?subject=PDF%20Utility%20Kit%20Waitlist"
+    price: "$7 launch price",
+    url: "https://zzdynamo3.gumroad.com/l/pdf-utility-kit"
   },
   "AI Visibility": {
     label: "AI Visibility Fix Kit",

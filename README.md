@@ -14,3 +14,4 @@ A static directory site for organizing a network of free browser tools and low-c
 
 - Resume Application Kit: https://zzdynamo3.gumroad.com/l/resume-application-kit
 - AI Visibility Fix Kit: https://zzdynamo3.gumroad.com/l/ai-visibility-fix-kit
+- PDF Utility Kit: https://zzdynamo3.gumroad.com/l/pdf-utility-kit
