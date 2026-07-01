@@ -129,6 +129,12 @@ footer,
   gap: 12px;
 }
 
+.toolbar {
+  justify-content: center;
+  margin: 26px auto 34px;
+  max-width: 980px;
+}
+
 .button,
 .filter-button {
   align-items: center;
@@ -493,6 +499,26 @@ select {
 
 .deal-section {
   background: #f6f8fa;
+}
+
+.tool-summary {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: -12px auto 8px;
+  max-width: 900px;
+}
+
+.tool-summary span {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #57606a;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 8px 12px;
 }
 
 .deal-grid {
