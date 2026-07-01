@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Resume Bullet Point Rewriter</title>
+    <meta
+      name="description"
+      content="Rewrite weak resume bullet points into stronger US-style achievement bullets with action verbs, scope, keywords, and measurable outcomes."
+    />
+    <link rel="canonical" href="https://aivisibilitytools.github.io/micro-tool-network/resume-bullet-point-rewriter.html" />
+    <meta property="og:title" content="Free Resume Bullet Point Rewriter" />
+    <meta
+      property="og:description"
+      content="Turn a plain resume bullet into stronger ATS-friendly achievement bullets you can copy into your resume."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aivisibilitytools.github.io/micro-tool-network/resume-bullet-point-rewriter.html" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Resume Bullet Point Rewriter",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://aivisibilitytools.github.io/micro-tool-network/resume-bullet-point-rewriter.html",
+        "description": "A free browser-based resume bullet point rewriter for job seekers.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">Micro Tool Network</a>
+      <nav>
+        <a href="index.html">All Tools</a>
+        <a href="https://aivisibilitytools.github.io/job-application-pack-builder/">Resume Builder</a>
+        <a href="https://zzdynamo3.gumroad.com/l/resume-application-kit">Resume Kit</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Free career tool</p>
+          <h1>Rewrite weak resume bullets into stronger proof.</h1>
+          <p class="subhead">
+            Paste one plain bullet, add the target role and measurable result,
+            then generate sharper US-style resume bullets with action, scope,
+            keywords, and outcome.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#rewriter">Rewrite Bullet</a>
+            <a class="button secondary" href="https://zzdynamo3.gumroad.com/l/resume-application-kit">Get Resume Kit</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <p class="panel-label">Better bullet formula</p>
+          <h2>Action + scope + method + measurable result.</h2>
+          <ul>
+            <li>Start with a strong action verb</li>
+            <li>Add the audience, system, process, or project scope</li>
+            <li>Include numbers, frequency, size, or business outcome</li>
+            <li>Keep it specific to the target role</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="rewriter" class="section band">
+        <div class="section-heading">
+          <p class="eyebrow">Resume bullet rewriter</p>
+          <h2>Turn one plain task into three stronger bullet options.</h2>
+          <p>
+            Everything runs in your browser. Your resume text is not uploaded.
+          </p>
+        </div>
+
+        <div class="tool-workspace">
+          <article class="card">
+            <label>
+              Original bullet
+              <textarea id="rawBullet" rows="5" placeholder="Example: Helped customers and answered support tickets."></textarea>
+            </label>
+            <div class="form-grid">
+              <label>
+                Target role
+                <input id="targetRole" type="text" placeholder="Customer Success Manager" />
+              </label>
+              <label>
+                Industry or product
+                <input id="industry" type="text" placeholder="B2B SaaS" />
+              </label>
+            </div>
+            <label>
+              Numbers or outcome
+              <input id="outcome" type="text" placeholder="reduced response time by 25%" />
+            </label>
+            <label>
+              Keywords to include
+              <input id="keywords" type="text" placeholder="customer retention, onboarding, CRM, support tickets" />
+            </label>
+            <button class="button primary full" id="rewriteButton">Rewrite Bullet</button>
+          </article>
+
+          <article class="card output-card">
+            <p class="eyebrow">Output</p>
+            <h3>Your rewritten bullets</h3>
+            <div id="output" class="result-box">
+              Fill out the fields to generate resume bullet options.
+            </div>
+            <button class="button secondary full" id="copyButton">Copy Results</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Related tools</p>
+          <h2>Keep improving the full application package.</h2>
+        </div>
+        <div class="cluster-grid">
+          <article class="card">
+            <span class="tag">Resume</span>
+            <h3>US Resume PDF Builder</h3>
+            <p>Create a clean US-style resume and save it as PDF.</p>
+            <a class="text-link" href="https://aivisibilitytools.github.io/job-application-pack-builder/resume-builder.html">Open tool</a>
+          </article>
+          <article class="card">
+            <span class="tag">ATS</span>
+            <h3>ATS Resume Checker</h3>
+            <p>Check whether your resume has the core signals recruiters expect.</p>
+            <a class="text-link" href="https://aivisibilitytools.github.io/job-application-pack-builder/ats-resume-checker.html">Open tool</a>
+          </article>
+          <article class="card">
+            <span class="tag">Paid kit</span>
+            <h3>Resume Application Kit</h3>
+            <p>Get templates, trackers, scripts, and checklists for a cleaner job search.</p>
+            <a class="text-link" href="https://zzdynamo3.gumroad.com/l/resume-application-kit">Open Gumroad</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Micro Tool Network. Privacy-first static tools for focused workflows.</p>
+      <a href="index.html">All Tools</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </footer>
+
+    <script>
+      const rawBullet = document.querySelector("#rawBullet");
+      const targetRole = document.querySelector("#targetRole");
+      const industry = document.querySelector("#industry");
+      const outcome = document.querySelector("#outcome");
+      const keywords = document.querySelector("#keywords");
+      const output = document.querySelector("#output");
+      const rewriteButton = document.querySelector("#rewriteButton");
+      const copyButton = document.querySelector("#copyButton");
+
+      function cleanText(value) {
+        return value.trim().replace(/\s+/g, " ");
+      }
+
+      function sentenceCase(value) {
+        const clean = cleanText(value).replace(/[.]+$/, "");
+        return clean ? clean.charAt(0).toLowerCase() + clean.slice(1) : "";
+      }
+
+      function actionPhrase(value) {
+        return sentenceCase(value)
+          .replace(/^(i\s+)?(was\s+)?responsible for\s+/i, "")
+          .replace(/^(i\s+)?helped\s+/i, "helped ")
+          .replace(/^(i\s+)?worked on\s+/i, "improved ");
+      }
+
+      function buildBullets() {
+        const role = cleanText(targetRole.value) || "target role";
+        const field = cleanText(industry.value) || "the business";
+        const result = cleanText(outcome.value) || "improved team performance";
+        const keywordList = cleanText(keywords.value) || "process improvement, stakeholder communication";
+        const original = actionPhrase(rawBullet.value) || "improved daily operations";
+
+        return [
+          `Improved ${field} workflows by ${original}, contributing to ${result}.`,
+          `Partnered with cross-functional teams to ${original}, using ${keywordList} to support ${role} priorities and deliver ${result}.`,
+          `Strengthened ${field} execution by ${original}, improving ${keywordList} and producing ${result}.`
+        ];
+      }
+
+      function renderBullets() {
+        const bullets = buildBullets();
+        output.innerHTML = bullets
+          .map((bullet, index) => `<p><strong>Option ${index + 1}:</strong><br>${bullet}</p>`)
+          .join("");
+      }
+
+      rewriteButton.addEventListener("click", renderBullets);
+
+      copyButton.addEventListener("click", async () => {
+        const text = output.innerText.trim();
+        if (!text || text.includes("Fill out the fields")) return;
+        await navigator.clipboard.writeText(text);
+        copyButton.textContent = "Copied";
+        setTimeout(() => {
+          copyButton.textContent = "Copy Results";
+        }, 1200);
+      });
+    </script>
+  </body>
+</html>
