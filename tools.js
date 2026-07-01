@@ -1,8 +1,8 @@
 const tools = [
   ["Career", "Resume Bullet Point Rewriter", "Job seekers", "Need stronger achievement bullets", "Resume Application Kit", "resume-bullet-point-rewriter.html"],
+  ["Career", "ATS Keyword Gap Checker", "Job seekers", "Need to match a resume to a job description", "Resume Application Kit", "ats-keyword-gap-checker.html"],
   ["Career", "US Resume PDF Builder", "Job seekers", "Need a clean US-style resume PDF", "Resume Application Kit", "https://aivisibilitytools.github.io/job-application-pack-builder/resume-builder.html"],
   ["Career", "ATS Resume Checker", "Job seekers", "Fear ATS rejection", "ATS checklist pack"],
-  ["Career", "Resume Keyword Gap Checker", "Job seekers", "Need to match a resume to a job description", "Tailoring worksheet"],
   ["Career", "Cover Letter Starter", "Job seekers", "Blank page anxiety", "Cover letter templates"],
   ["Career", "Recruiter Follow-Up Email Generator", "Job seekers", "Awkward follow-ups after applying", "Email script pack"],
   ["Career", "Resume File Name Generator", "Job seekers", "Messy resume file names", "Application tracker"],
