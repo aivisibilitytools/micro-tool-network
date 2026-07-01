@@ -137,8 +137,8 @@ const kitLinks = {
   },
   "Creator": {
     label: "Creator Launch Kit",
-    price: "$9 planned",
-    url: "mailto:zzd050131@gmail.com?subject=Creator%20Launch%20Kit%20Waitlist"
+    price: "$9 launch price",
+    url: "https://zzdynamo3.gumroad.com/l/creator-launch-kit"
   },
   "Small Biz": {
     label: "Small Biz Admin Kit",
