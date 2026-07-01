@@ -142,8 +142,8 @@ const kitLinks = {
   },
   "Small Biz": {
     label: "Small Biz Admin Kit",
-    price: "$12 planned",
-    url: "mailto:zzd050131@gmail.com?subject=Small%20Biz%20Admin%20Kit%20Waitlist"
+    price: "$12 launch price",
+    url: "https://zzdynamo3.gumroad.com/l/small-biz-admin-kit"
   },
   "Dev/Product": {
     label: "Product Ops Kit",

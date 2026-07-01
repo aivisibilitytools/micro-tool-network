@@ -16,3 +16,4 @@ A static directory site for organizing a network of free browser tools and low-c
 - AI Visibility Fix Kit: https://zzdynamo3.gumroad.com/l/ai-visibility-fix-kit
 - PDF Utility Kit: https://zzdynamo3.gumroad.com/l/pdf-utility-kit
 - Creator Launch Kit: https://zzdynamo3.gumroad.com/l/creator-launch-kit
+- Small Biz Admin Kit: https://zzdynamo3.gumroad.com/l/small-biz-admin-kit
