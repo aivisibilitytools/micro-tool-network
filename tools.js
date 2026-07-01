@@ -8,7 +8,7 @@ const tools = [
   ["Career", "Resume File Name Generator", "Job seekers", "Messy resume file names", "Application tracker"],
   ["Career", "Job Application Tracker", "Job seekers", "Lost applications and interview notes", "Google Sheets tracker"],
   ["Career", "LinkedIn Headline Generator", "Job seekers", "Weak LinkedIn positioning", "Resume Application Kit", "linkedin-headline-generator.html"],
-  ["Career", "Interview STAR Answer Builder", "Job seekers", "Need stronger interview stories", "Interview prep kit"],
+  ["Career", "Interview STAR Answer Builder", "Job seekers", "Need stronger interview stories", "Resume Application Kit", "interview-star-answer-builder.html"],
   ["Career", "Layoff Job Search Planner", "Laid-off workers", "Need a structured job search week", "Job search planner"],
   ["Career", "Salary Negotiation Script Generator", "Job seekers", "Need confident negotiation language", "Negotiation scripts"],
   ["Career", "Portfolio PDF Order Planner", "Designers and PMs", "Portfolio feels messy", "Portfolio templates"],
