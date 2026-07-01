@@ -119,11 +119,50 @@ const toolGrid = document.querySelector("#toolGrid");
 const planGrid = document.querySelector("#planGrid");
 const filterButtons = document.querySelectorAll(".filter-button");
 
+const kitLinks = {
+  "Career": {
+    label: "Resume Application Kit",
+    price: "$12 launch price",
+    url: "https://zzdynamo3.gumroad.com/l/resume-application-kit"
+  },
+  "PDF": {
+    label: "Resume Application Kit",
+    price: "$12 launch price",
+    url: "https://zzdynamo3.gumroad.com/l/resume-application-kit"
+  },
+  "AI Visibility": {
+    label: "AI Visibility Fix Kit",
+    price: "$19 launch price",
+    url: "https://zzdynamo3.gumroad.com/l/ai-visibility-fix-kit"
+  },
+  "Creator": {
+    label: "Creator Launch Kit",
+    price: "$9-$19 planned",
+    url: "mailto:zzd050131@gmail.com?subject=Creator%20Launch%20Kit%20Waitlist"
+  },
+  "Small Biz": {
+    label: "Small Biz Admin Kit",
+    price: "$9-$19 planned",
+    url: "mailto:zzd050131@gmail.com?subject=Small%20Biz%20Admin%20Kit%20Waitlist"
+  },
+  "Dev/Product": {
+    label: "Product Ops Kit",
+    price: "$12-$19 planned",
+    url: "mailto:zzd050131@gmail.com?subject=Product%20Ops%20Kit%20Waitlist"
+  },
+  "Personal/Education": {
+    label: "Life Admin Pack",
+    price: "$7-$12 planned",
+    url: "mailto:zzd050131@gmail.com?subject=Life%20Admin%20Pack%20Waitlist"
+  }
+};
+
 function renderTools(filter = "All") {
   const filtered = filter === "All" ? tools : tools.filter((tool) => tool[0] === filter);
   toolGrid.innerHTML = filtered
     .map((tool) => {
       const index = tools.indexOf(tool) + 1;
+      const kit = kitLinks[tool[0]];
       return `
         <article class="tool-card">
           <span class="tool-id">#${index}</span>
@@ -131,7 +170,10 @@ function renderTools(filter = "All") {
           <h3>${tool[1]}</h3>
           <p>${tool[3]}</p>
           <p><strong>Paid path:</strong> ${tool[4]}</p>
-          ${tool[5] ? `<a class="text-link" href="${tool[5]}">Open tool</a>` : ""}
+          <div class="tool-actions">
+            ${tool[5] ? `<a class="text-link" href="${tool[5]}">Open tool</a>` : ""}
+            ${kit ? `<a class="kit-link" href="${kit.url}">${kit.price} - ${kit.label}</a>` : ""}
+          </div>
         </article>
       `;
     })

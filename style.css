@@ -378,3 +378,156 @@ footer {
     width: 100%;
   }
 }
+
+/* GitHub-style visual refresh */
+:root {
+  --bg: #f6f8fa;
+  --panel: #ffffff;
+  --ink: #24292f;
+  --muted: #57606a;
+  --line: #d0d7de;
+  --accent: #0969da;
+  --accent-dark: #0550ae;
+  --green: #2da44e;
+  --green-dark: #1a7f37;
+  --amber: #bf8700;
+  --soft: #ddf4ff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.topbar {
+  background: #ffffff;
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.04);
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+
+.brand {
+  color: #24292f;
+  font-size: 16px;
+}
+
+nav a {
+  color: #57606a;
+}
+
+nav a:hover,
+.text-link:hover,
+.kit-link:hover {
+  color: #0969da;
+  text-decoration: underline;
+}
+
+.hero {
+  min-height: 560px;
+}
+
+h1 {
+  color: #24292f;
+}
+
+.button,
+.filter-button,
+input,
+textarea,
+select {
+  border-radius: 6px;
+}
+
+.button.primary,
+.filter-button.active {
+  background: var(--green);
+  border-color: rgba(27, 31, 36, 0.15);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.button.primary:hover,
+.filter-button.active:hover {
+  background: var(--green-dark);
+}
+
+.button.secondary,
+.filter-button {
+  background: #f6f8fa;
+  border-color: rgba(27, 31, 36, 0.15);
+}
+
+.hero-panel,
+.card,
+.price-card,
+.tool-card,
+.plan-card,
+.legal,
+.deal-card {
+  border-color: var(--line);
+  box-shadow: 0 8px 24px rgba(140, 149, 159, 0.18);
+}
+
+.tool-card,
+.deal-card {
+  justify-content: space-between;
+}
+
+.tool-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.kit-link {
+  background: #f6f8fa;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: #0969da;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  justify-content: center;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.deal-section {
+  background: #f6f8fa;
+}
+
+.deal-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.deal-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+}
+
+.compare {
+  background: #fff8c5;
+  border: 1px solid #eac54f;
+  border-radius: 6px;
+  color: #57606a;
+  font-size: 14px;
+  padding: 10px 12px;
+}
+
+.featured {
+  border-color: #fb8500;
+}
+
+@media (max-width: 980px) {
+  .deal-grid {
+    grid-template-columns: 1fr;
+  }
+}
