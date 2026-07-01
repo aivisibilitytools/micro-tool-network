@@ -126,9 +126,9 @@ const kitLinks = {
     url: "https://zzdynamo3.gumroad.com/l/resume-application-kit"
   },
   "PDF": {
-    label: "Resume Application Kit",
-    price: "$12 launch price",
-    url: "https://zzdynamo3.gumroad.com/l/resume-application-kit"
+    label: "PDF Utility Kit",
+    price: "$7 planned",
+    url: "mailto:zzd050131@gmail.com?subject=PDF%20Utility%20Kit%20Waitlist"
   },
   "AI Visibility": {
     label: "AI Visibility Fix Kit",
@@ -137,22 +137,22 @@ const kitLinks = {
   },
   "Creator": {
     label: "Creator Launch Kit",
-    price: "$9-$19 planned",
+    price: "$9 planned",
     url: "mailto:zzd050131@gmail.com?subject=Creator%20Launch%20Kit%20Waitlist"
   },
   "Small Biz": {
     label: "Small Biz Admin Kit",
-    price: "$9-$19 planned",
+    price: "$12 planned",
     url: "mailto:zzd050131@gmail.com?subject=Small%20Biz%20Admin%20Kit%20Waitlist"
   },
   "Dev/Product": {
     label: "Product Ops Kit",
-    price: "$12-$19 planned",
+    price: "$15 planned",
     url: "mailto:zzd050131@gmail.com?subject=Product%20Ops%20Kit%20Waitlist"
   },
   "Personal/Education": {
     label: "Life Admin Pack",
-    price: "$7-$12 planned",
+    price: "$7 planned",
     url: "mailto:zzd050131@gmail.com?subject=Life%20Admin%20Pack%20Waitlist"
   }
 };
