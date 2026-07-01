@@ -291,7 +291,8 @@ label {
 }
 
 input,
-textarea {
+textarea,
+select {
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -330,6 +331,14 @@ textarea {
 
 .result-box p {
   margin-bottom: 18px;
+}
+
+.result-box pre {
+  color: var(--muted);
+  font: inherit;
+  line-height: 1.65;
+  margin: 0;
+  white-space: pre-wrap;
 }
 
 footer {

@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Cover Letter Personalizer</title>
+    <meta
+      name="description"
+      content="Generate a focused US-style cover letter draft from a role, company, job description, and your strongest proof."
+    />
+    <link rel="canonical" href="https://aivisibilitytools.github.io/micro-tool-network/cover-letter-personalizer.html" />
+    <meta property="og:title" content="Free Cover Letter Personalizer" />
+    <meta
+      property="og:description"
+      content="Turn job details and your strongest proof into a clear, recruiter-friendly cover letter draft."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aivisibilitytools.github.io/micro-tool-network/cover-letter-personalizer.html" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Cover Letter Personalizer",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://aivisibilitytools.github.io/micro-tool-network/cover-letter-personalizer.html",
+        "description": "A free browser-based cover letter personalizer for job seekers.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">Micro Tool Network</a>
+      <nav>
+        <a href="index.html">All Tools</a>
+        <a href="ats-keyword-gap-checker.html">ATS Checker</a>
+        <a href="resume-bullet-point-rewriter.html">Bullet Rewriter</a>
+        <a href="https://zzdynamo3.gumroad.com/l/resume-application-kit">Resume Kit</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Free career tool</p>
+          <h1>Write a focused cover letter without starting from a blank page.</h1>
+          <p class="subhead">
+            Enter the company, target role, job priorities, and your strongest
+            proof. Get a concise US-style cover letter draft you can edit and
+            send with your resume.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#generator">Generate Cover Letter</a>
+            <a class="button secondary" href="https://zzdynamo3.gumroad.com/l/resume-application-kit">Get Resume Kit</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <p class="panel-label">What it creates</p>
+          <h2>Specific, calm, and recruiter-friendly.</h2>
+          <ul>
+            <li>Short opening with company and role</li>
+            <li>One proof paragraph based on your real result</li>
+            <li>Keywords pulled from the job description</li>
+            <li>Professional close and copy-ready output</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="generator" class="section band">
+        <div class="section-heading">
+          <p class="eyebrow">Cover letter generator</p>
+          <h2>Personalize the first draft.</h2>
+          <p>
+            Keep it truthful and specific. A stronger cover letter usually
+            sounds like a relevant note, not a generic essay.
+          </p>
+        </div>
+
+        <div class="tool-workspace">
+          <div class="card">
+            <div class="form-grid">
+              <div>
+                <label for="company">Company</label>
+                <input id="company" value="Stripe" />
+              </div>
+              <div>
+                <label for="role">Target role</label>
+                <input id="role" value="Product Manager" />
+              </div>
+            </div>
+
+            <label for="candidate">Your name</label>
+            <input id="candidate" value="Jane Chen" />
+
+            <label for="jobPriorities">Job priorities or description snippets</label>
+            <textarea
+              id="jobPriorities"
+              rows="6"
+              placeholder="Paste the most important parts of the job description..."
+            >customer research, product strategy, roadmap planning, A/B testing, cross-functional execution</textarea>
+
+            <label for="proof">Your strongest proof</label>
+            <textarea
+              id="proof"
+              rows="5"
+              placeholder="Example: Improved onboarding conversion by 18% by redesigning activation emails and first-run product prompts."
+            >Improved onboarding conversion by 18% by redesigning activation emails and first-run product prompts.</textarea>
+
+            <div class="form-grid">
+              <div>
+                <label for="tone">Tone</label>
+                <select id="tone">
+                  <option value="direct">Direct and professional</option>
+                  <option value="warm">Warm and enthusiastic</option>
+                  <option value="senior">Senior and concise</option>
+                </select>
+              </div>
+              <div>
+                <label for="length">Length</label>
+                <select id="length">
+                  <option value="short">Short</option>
+                  <option value="medium">Medium</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="button primary full" id="generateButton">Generate Cover Letter</button>
+          </div>
+
+          <div class="card output-card">
+            <p class="eyebrow">Output</p>
+            <h3>Your cover letter draft</h3>
+            <div class="result-box" id="output">
+              <p>Fill out the form to generate a cover letter draft.</p>
+            </div>
+            <button class="button secondary full" id="copyButton">Copy Cover Letter</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Use with</p>
+          <h2>Make the full application stronger.</h2>
+        </div>
+        <div class="tool-grid three">
+          <article class="card">
+            <span class="tag">Match</span>
+            <h3>ATS Keyword Gap Checker</h3>
+            <p>Compare your resume against the job description before applying.</p>
+            <a class="text-link" href="ats-keyword-gap-checker.html">Open tool</a>
+          </article>
+          <article class="card">
+            <span class="tag">Rewrite</span>
+            <h3>Resume Bullet Point Rewriter</h3>
+            <p>Turn basic responsibilities into stronger achievement bullets.</p>
+            <a class="text-link" href="resume-bullet-point-rewriter.html">Open tool</a>
+          </article>
+          <article class="card">
+            <span class="tag">Paid kit</span>
+            <h3>Resume Application Kit</h3>
+            <p>Get cover letter templates, trackers, scripts, and checklists.</p>
+            <a class="text-link" href="https://zzdynamo3.gumroad.com/l/resume-application-kit">Open Gumroad</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Micro Tool Network. Privacy-first static tools for focused workflows.</p>
+      <a href="index.html">All Tools</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </footer>
+
+    <script>
+      const company = document.querySelector("#company");
+      const role = document.querySelector("#role");
+      const candidate = document.querySelector("#candidate");
+      const jobPriorities = document.querySelector("#jobPriorities");
+      const proof = document.querySelector("#proof");
+      const tone = document.querySelector("#tone");
+      const length = document.querySelector("#length");
+      const output = document.querySelector("#output");
+      const generateButton = document.querySelector("#generateButton");
+      const copyButton = document.querySelector("#copyButton");
+
+      function sentenceCase(value) {
+        const text = value.trim();
+        if (!text) return "";
+        return text.charAt(0).toUpperCase() + text.slice(1);
+      }
+
+      function extractPriorities(text) {
+        return text
+          .split(/,|\n|;/)
+          .map((item) => item.trim())
+          .filter(Boolean)
+          .slice(0, 5);
+      }
+
+      function createLetter() {
+        const companyName = company.value.trim() || "[Company]";
+        const roleName = role.value.trim() || "[Role]";
+        const candidateName = candidate.value.trim() || "[Your Name]";
+        const proofText = sentenceCase(proof.value) || "I have delivered measurable results in similar work.";
+        const priorities = extractPriorities(jobPriorities.value);
+        const priorityText = priorities.length
+          ? priorities.join(", ")
+          : "the priorities described in the role";
+
+        let opening = `Dear ${companyName} hiring team,`;
+        let paragraphOne = `I am excited to apply for the ${roleName} role at ${companyName}. The role stands out to me because it connects directly with ${priorityText}, areas where I can contribute with focus and ownership.`;
+        let paragraphTwo = `One example from my background: ${proofText} I would bring the same practical, outcome-focused approach to this team.`;
+        let paragraphThree = `Thank you for your time and consideration. I would welcome the chance to discuss how my experience can support ${companyName}'s goals.`;
+
+        if (tone.value === "warm") {
+          paragraphOne = `I am excited to apply for the ${roleName} role at ${companyName}. I was drawn to this opportunity because it combines ${priorityText}, and it feels like the kind of work where I could contribute quickly and thoughtfully.`;
+        }
+
+        if (tone.value === "senior") {
+          paragraphOne = `I am applying for the ${roleName} role at ${companyName}. My background aligns with ${priorityText}, and I am most effective when turning ambiguous product or business goals into clear execution.`;
+          paragraphThree = `I would welcome a conversation about where my experience can be most useful. Thank you for your consideration.`;
+        }
+
+        const mediumExtra =
+          length.value === "medium"
+            ? `\n\nI am especially interested in roles where clear communication, strong judgment, and measurable execution matter. Based on the job description, I believe my experience maps well to the problems this team is trying to solve.`
+            : "";
+
+        return `${opening}\n\n${paragraphOne}\n\n${paragraphTwo}${mediumExtra}\n\n${paragraphThree}\n\nBest regards,\n${candidateName}`;
+      }
+
+      generateButton.addEventListener("click", () => {
+        output.innerHTML = `<pre>${createLetter()}</pre>`;
+      });
+
+      copyButton.addEventListener("click", async () => {
+        const text = output.innerText.trim();
+        if (!text || text.includes("Fill out the form")) return;
+        await navigator.clipboard.writeText(text);
+        copyButton.textContent = "Copied";
+        setTimeout(() => {
+          copyButton.textContent = "Copy Cover Letter";
+        }, 1200);
+      });
+    </script>
+  </body>
+</html>
