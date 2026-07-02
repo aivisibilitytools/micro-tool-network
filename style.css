@@ -973,3 +973,90 @@ textarea {
     gap: 10px;
   }
 }
+
+/* Generated tool pages use .tool-hero and .tool-layout */
+.tool-hero {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(124, 58, 237, 0.12), transparent 34%),
+    linear-gradient(180deg, #fbfbff 0%, #f6f2ff 100%);
+  border-bottom: 1px solid var(--line);
+  box-sizing: border-box;
+  margin: 0;
+  padding: clamp(56px, 8vw, 88px) clamp(20px, 5vw, 40px);
+}
+
+.tool-hero > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1180px;
+}
+
+.tool-hero h1 {
+  color: var(--ink);
+  font-size: clamp(44px, 6vw, 76px);
+  letter-spacing: 0;
+  line-height: 0.98;
+  margin-bottom: 18px;
+  overflow-wrap: anywhere;
+}
+
+.tool-hero .subhead {
+  color: var(--muted);
+  font-size: clamp(18px, 2vw, 21px);
+  line-height: 1.55;
+  max-width: 1180px;
+}
+
+.tool-layout {
+  align-items: start;
+  box-sizing: border-box;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.92fr);
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: clamp(48px, 6vw, 72px) clamp(20px, 5vw, 40px);
+  width: 100%;
+}
+
+.tool-layout .card {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 18px 54px rgba(79, 70, 229, 0.08);
+  min-width: 0;
+  padding: clamp(24px, 3vw, 34px);
+}
+
+.tool-layout .card h2 {
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+.stack {
+  display: grid;
+  gap: 16px;
+}
+
+.output-box {
+  background: #fbfbff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--muted);
+  line-height: 1.65;
+  min-height: 220px;
+  overflow-wrap: anywhere;
+  padding: 22px;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 980px) {
+  .tool-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-hero h1 {
+    font-size: clamp(40px, 11vw, 60px);
+  }
+}
