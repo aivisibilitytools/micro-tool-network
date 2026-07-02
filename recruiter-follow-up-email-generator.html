@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Free Recruiter Follow-Up Email Generator</title><meta name="description" content="Generate polite recruiter follow-up emails after applying, interviewing, or receiving no response."><link rel="canonical" href="https://aivisibilitytools.github.io/micro-tool-network/recruiter-follow-up-email-generator.html"><link rel="stylesheet" href="style.css"></head><body>
+<header class="topbar"><a class="brand" href="index.html">Micro Tool Network</a><nav><a href="index.html">All Tools</a><a href="interview-star-answer-builder.html">STAR Builder</a><a href="https://zzdynamo3.gumroad.com/l/resume-application-kit">Resume Kit</a><a href="privacy.html">Privacy</a></nav></header>
+<main><section class="hero"><div class="hero-copy"><p class="eyebrow">Free career tool</p><h1>Write a polite recruiter follow-up email.</h1><p class="subhead">Generate short, professional follow-ups for applications, interviews, and silent recruiters.</p><a class="button primary" href="#tool">Generate Email</a></div><div class="hero-panel"><p class="panel-label">Use cases</p><h2>Follow up without sounding pushy.</h2><ul><li>After applying</li><li>After interview</li><li>No response</li></ul></div></section>
+<section id="tool" class="section band"><div class="tool-workspace"><div class="card"><label>Your name<input id="name" value="Jane Chen"></label><div class="form-grid"><label>Company<input id="company" value="Stripe"></label><label>Role<input id="role" value="Product Manager"></label></div><label>Status<select id="status"><option>After applying</option><option>After interview</option><option>No response after 7 days</option></select></label><label>One helpful detail<textarea id="detail" rows="4">I am especially interested in the team's work on self-serve product growth.</textarea></label><button class="button primary full" id="go">Generate Follow-Up</button></div><div class="card output-card"><p class="eyebrow">Output</p><h3>Email draft</h3><div class="result-box" id="out"><p>Fill out the form.</p></div><button class="button secondary full" id="copy">Copy Email</button></div></div></section>
+<section class="section"><div class="tool-grid three"><article class="card"><h3>Cover Letter Personalizer</h3><p>Write a stronger first note.</p><a class="text-link" href="cover-letter-personalizer.html">Open tool</a></article><article class="card"><h3>Interview STAR Answer Builder</h3><p>Prepare better stories.</p><a class="text-link" href="interview-star-answer-builder.html">Open tool</a></article><article class="card"><h3>Resume Application Kit</h3><p>Get follow-up scripts and trackers.</p><a class="text-link" href="https://zzdynamo3.gumroad.com/l/resume-application-kit">Open Gumroad</a></article></div></section>
+<section class="section next-tool-section" aria-label="Recommended next step">
+  <div class="next-tool-grid">
+    <article class="next-tool-card">
+      <p class="eyebrow">NEXT TOOL</p>
+      <h2>Resume File Name Generator</h2>
+      <p>Continue the workflow after Recruiter Follow-Up Email Generator with the next focused tool.</p>
+      <a class="button secondary full" href="resume-file-name-generator.html">Open Next Tool</a>
+    </article>
+    <article class="next-tool-card featured">
+      <p class="eyebrow">PAID KIT</p>
+      <h2>Resume Application Kit</h2>
+      <p>Get reusable templates, checklists, and scripts for this Career workflow.</p>
+      <a class="button primary full" href="https://zzdynamo3.gumroad.com/l/resume-application-kit" target="_blank" rel="noopener">Download the Resume Kit</a>
+    </article>
+  </div>
+</section>
+</main>
+<footer><p>Micro Tool Network. Privacy-first static tools.</p><a href="index.html">All Tools</a><a href="privacy.html">Privacy</a></footer>
+<script>const $=id=>document.getElementById(id);$("go").onclick=()=>{$("out").innerHTML=`<pre>Subject: Following up on the ${$("role").value} role
+
+Hi ${$("company").value} team,
+
+I wanted to follow up on my application for the ${$("role").value} role. ${$("detail").value}
+
+I remain very interested in the opportunity and would be grateful for any update you can share.
+
+Best,
+${$("name").value}</pre>`};$("copy").onclick=async()=>{let t=$("out").innerText.trim();if(!t||t.includes("Fill out"))return;await navigator.clipboard.writeText(t);$("copy").textContent="Copied";setTimeout(()=>$("copy").textContent="Copy Email",1200)};</script></body></html>

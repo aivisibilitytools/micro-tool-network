@@ -1,7 +1,24 @@
 <!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Free Job Application Tracker</title><meta name="description" content="Create a simple job application tracker table and copy it into Google Sheets or Notion."><link rel="canonical" href="https://aivisibilitytools.github.io/micro-tool-network/job-application-tracker.html"><link rel="stylesheet" href="style.css"></head><body>
 <header class="topbar"><a class="brand" href="index.html">Micro Tool Network</a><nav><a href="index.html">All Tools</a><a href="resume-file-name-generator.html">File Names</a><a href="https://zzdynamo3.gumroad.com/l/resume-application-kit">Resume Kit</a><a href="privacy.html">Privacy</a></nav></header>
 <main><section class="hero"><div class="hero-copy"><p class="eyebrow">Free career tool</p><h1>Create a simple job application tracker.</h1><p class="subhead">Generate a copy-ready table for tracking roles, companies, dates, links, status, and follow-ups.</p><a class="button primary" href="#tool">Build Tracker</a></div><div class="hero-panel"><p class="panel-label">Tracks</p><h2>Applications, status, and next actions.</h2><ul><li>Company and role</li><li>Application date</li><li>Follow-up date</li></ul></div></section>
-<section id="tool" class="section band"><div class="tool-workspace"><div class="card"><label>First company<input id="company" value="Stripe"></label><label>First role<input id="role" value="Product Manager"></label><label>Status<select id="status"><option>Applied</option><option>Interviewing</option><option>Follow up needed</option><option>Rejected</option></select></label><button class="button primary full" id="go">Generate Tracker</button></div><div class="card output-card"><p class="eyebrow">Output</p><h3>Copy to Sheets</h3><div class="result-box" id="out"><p>Fill out the form.</p></div><button class="button secondary full" id="copy">Copy Tracker</button></div></div></section></main>
+<section id="tool" class="section band"><div class="tool-workspace"><div class="card"><label>First company<input id="company" value="Stripe"></label><label>First role<input id="role" value="Product Manager"></label><label>Status<select id="status"><option>Applied</option><option>Interviewing</option><option>Follow up needed</option><option>Rejected</option></select></label><button class="button primary full" id="go">Generate Tracker</button></div><div class="card output-card"><p class="eyebrow">Output</p><h3>Copy to Sheets</h3><div class="result-box" id="out"><p>Fill out the form.</p></div><button class="button secondary full" id="copy">Copy Tracker</button></div></div></section>
+<section class="section next-tool-section" aria-label="Recommended next step">
+  <div class="next-tool-grid">
+    <article class="next-tool-card">
+      <p class="eyebrow">NEXT TOOL</p>
+      <h2>LinkedIn Headline Generator</h2>
+      <p>Continue the workflow after Job Application Tracker with the next focused tool.</p>
+      <a class="button secondary full" href="linkedin-headline-generator.html">Open Next Tool</a>
+    </article>
+    <article class="next-tool-card featured">
+      <p class="eyebrow">PAID KIT</p>
+      <h2>Resume Application Kit</h2>
+      <p>Get reusable templates, checklists, and scripts for this Career workflow.</p>
+      <a class="button primary full" href="https://zzdynamo3.gumroad.com/l/resume-application-kit" target="_blank" rel="noopener">Download the Resume Kit</a>
+    </article>
+  </div>
+</section>
+</main>
 <footer><p>Micro Tool Network. Privacy-first static tools.</p><a href="index.html">All Tools</a><a href="privacy.html">Privacy</a></footer>
 <script>const $=id=>document.getElementById(id);$("go").onclick=()=>{$("out").innerHTML=`<pre>Company	Role	Status	Date Applied	Job URL	Contact	Follow-Up Date	Notes
 ${$("company").value}	${$("role").value}	${$("status").value}	YYYY-MM-DD		Recruiter name	YYYY-MM-DD	
