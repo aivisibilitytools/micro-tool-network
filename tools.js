@@ -1,4 +1,23 @@
-﻿const tools = [
+﻿const trackEvent = (name, params = {}) => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: name, ...params });
+};
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("a");
+  if (!link) return;
+
+  const text = link.textContent.trim();
+  if (link.href.includes("gumroad.com")) {
+    trackEvent("gumroad_click", { url: link.href, text });
+  }
+  if (/kit|gumroad|download|request/i.test(text)) {
+    trackEvent("kit_cta_click", { url: link.href, text });
+  }
+});
+
+const tools = [
+
   ["Career", "Resume Bullet Point Rewriter", "Job seekers", "Need stronger achievement bullets", "Resume Application Kit", "resume-bullet-point-rewriter.html"],
   ["Career", "ATS Keyword Gap Checker", "Job seekers", "Need to match a resume to a job description", "Resume Application Kit", "ats-keyword-gap-checker.html"],
   ["Career", "Cover Letter Personalizer", "Job seekers", "Need a focused cover letter for each role", "Resume Application Kit", "cover-letter-personalizer.html"],
@@ -132,7 +151,7 @@ const kitLinks = {
   },
   "AI Visibility": {
     label: "AI Visibility Fix Kit",
-    price: "$19 launch price",
+    price: "$29 Fix Kit",
     url: "https://zzdynamo3.gumroad.com/l/ai-visibility-fix-kit"
   },
   "Creator": {
@@ -198,6 +217,7 @@ filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     filterButtons.forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
+    trackEvent("tool_filter", { category: button.dataset.filter });
     renderTools(button.dataset.filter);
   });
 });
