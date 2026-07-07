@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Visibility Prompt Test Log Generator</title>
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --panel: #ffffff;
+      --ink: #172033;
+      --muted: #667085;
+      --line: #d9deea;
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --accent: #0f766e;
+      --soft: #eef2ff;
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .hero {
+      padding: 32px 0 26px;
+      display: grid;
+      gap: 10px;
+    }
+    .badge {
+      width: fit-content;
+      border: 1px solid #c7d2fe;
+      background: var(--soft);
+      color: var(--primary-dark);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 4.4vw, 48px);
+      line-height: 1.06;
+      letter-spacing: 0;
+    }
+    .sub {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    main {
+      padding: 28px 0 48px;
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .card, .result {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .card {
+      padding: 18px;
+    }
+    .card h2, .result h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+    label {
+      display: grid;
+      gap: 6px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      font-weight: 800;
+      color: #344054;
+    }
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px 11px;
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+    }
+    textarea {
+      min-height: 82px;
+      resize: vertical;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    button {
+      border: 0;
+      border-radius: 6px;
+      padding: 11px 14px;
+      font-weight: 800;
+      cursor: pointer;
+      color: #fff;
+      background: var(--primary);
+    }
+    button.secondary {
+      background: #fff;
+      color: var(--primary-dark);
+      border: 1px solid var(--line);
+    }
+    .result {
+      overflow: hidden;
+    }
+    .result-head {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      background: var(--soft);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+    }
+    pre {
+      margin: 0;
+      padding: 16px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      min-height: 660px;
+      max-height: 78vh;
+      overflow: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.55;
+      background: #fff;
+    }
+    .trust {
+      border-top: 1px solid var(--line);
+      background: #fff;
+      padding: 18px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+      pre { min-height: 420px; max-height: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap hero">
+      <div class="badge">Free AI Visibility Tool</div>
+      <h1>AI Visibility Prompt Test Log Generator</h1>
+      <p class="sub">Generate a practical set of prompts and a tracking log to test how AI assistants understand your brand, category, offers, competitors, and trust signals.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Build Your Test Log</h2>
+      <label>Brand or business name<input id="brand" placeholder="Acme Analytics"></label>
+      <label>Website URL<input id="url" placeholder="https://example.com"></label>
+      <label>Category<input id="category" placeholder="Shopify SEO consultant, local dentist, B2B SaaS"></label>
+      <label>Target customer<textarea id="customer" placeholder="Who should AI understand you serve?"></textarea></label>
+      <label>Main offer<textarea id="offer" placeholder="What do you sell or help people do?"></textarea></label>
+      <label>Competitors<textarea id="competitors" placeholder="List 1-3 competitors, one per line"></textarea></label>
+      <label>Market or location<input id="market" placeholder="United States, Chicago, Shopify stores, remote teams"></label>
+      <label>Tool focus
+        <select id="focus">
+          <option value="general">General business visibility</option>
+          <option value="local">Local business</option>
+          <option value="ecommerce">Ecommerce / Shopify</option>
+          <option value="saas">SaaS / software</option>
+          <option value="consultant">Consultant / service provider</option>
+        </select>
+      </label>
+      <div class="buttons">
+        <button id="generate">Generate Log</button>
+        <button class="secondary" id="copy">Copy</button>
+        <button class="secondary" id="download">Download .txt</button>
+      </div>
+    </section>
+
+    <section class="result">
+      <div class="result-head">
+        <h2>Prompt Test Log</h2>
+      </div>
+      <pre id="output">Fill out the form, then click Generate Log.</pre>
+    </section>
+  </main>
+
+  <div class="trust">
+    <div class="wrap">Free tools stay free. Paid kits give reusable templates, checklists, spreadsheets, and workflow files so you can fix issues faster. This tool does not query AI systems automatically and does not guarantee rankings or citations.</div>
+  </div>
+
+  <script>
+    const $ = id => document.getElementById(id);
+    const value = id => $(id).value.trim();
+
+    function lines(text) {
+      return text.split(/\n+/).map(x => x.trim()).filter(Boolean);
+    }
+
+    function promptSet(data) {
+      const competitors = lines(data.competitors);
+      const compText = competitors.length ? competitors.join(", ") : "[competitor names]";
+      const prompts = [
+        `What is ${data.brand}, and what does it offer?`,
+        `Summarize ${data.brand} based on its website: ${data.url}.`,
+        `Who is ${data.brand} best suited for?`,
+        `What category does ${data.brand} belong to?`,
+        `What problems does ${data.brand} help solve for ${data.customer}?`,
+        `Compare ${data.brand} with ${compText}.`,
+        `List alternatives to ${compText} for ${data.customer}.`,
+        `What should a buyer know before choosing ${data.brand}?`,
+        `Does ${data.brand} appear trustworthy? What proof is visible?`,
+        `What questions should someone ask before buying from ${data.brand}?`,
+        `Create a short buyer-facing description of ${data.brand}.`,
+        `What is unclear about ${data.brand}'s homepage or offer?`,
+        `What FAQ questions should ${data.brand} answer on its website?`,
+        `What search queries might someone use to find ${data.brand}?`,
+        `What entities, services, products, or locations should be clearly connected to ${data.brand}?`
+      ];
+
+      if (data.focus === "local") {
+        prompts.push(
+          `Is ${data.brand} clearly connected to ${data.market}?`,
+          `What local trust signals should ${data.brand} show?`,
+          `What service area questions should ${data.brand} answer?`
+        );
+      }
+      if (data.focus === "ecommerce") {
+        prompts.push(
+          `What product information is missing or unclear for ${data.brand}?`,
+          `How could ${data.brand} make product pages easier to understand?`,
+          `What would make ${data.brand}'s products more eligible for comparison answers?`
+        );
+      }
+      if (data.focus === "saas") {
+        prompts.push(
+          `What use cases should ${data.brand} make clearer?`,
+          `What integration, pricing, and feature questions should ${data.brand} answer?`,
+          `How would you explain ${data.brand} to a software buyer?`
+        );
+      }
+      if (data.focus === "consultant") {
+        prompts.push(
+          `What expertise signals should ${data.brand} make clearer?`,
+          `What client problems should ${data.brand} explain more directly?`,
+          `What case study or result proof would help ${data.brand}?`
+        );
+      }
+      return prompts;
+    }
+
+    function generate() {
+      const data = {
+        brand: value("brand") || "[Brand]",
+        url: value("url") || "[Website URL]",
+        category: value("category") || "[Category]",
+        customer: value("customer") || "[Target customer]",
+        offer: value("offer") || "[Main offer]",
+        competitors: value("competitors"),
+        market: value("market") || "[Market/location]",
+        focus: value("focus")
+      };
+
+      const prompts = promptSet(data);
+      const rows = prompts.map((prompt, i) => `${i + 1}. ${prompt}
+   Tool tested:
+   Date:
+   Was the brand mentioned? Yes / No
+   Was the category correct? Yes / No / Partial
+   Was the offer correct? Yes / No / Partial
+   Were competitors mentioned?
+   What was missing or wrong?
+   Next website fix:
+`).join("\n");
+
+      $("output").textContent = `AI Visibility Prompt Test Log
+
+Brand: ${data.brand}
+Website: ${data.url}
+Category: ${data.category}
+Target customer: ${data.customer}
+Main offer: ${data.offer}
+Market/location: ${data.market}
+
+How to use this log
+1. Test the same prompts in 2-3 AI assistants.
+2. Record whether the answer understands your category, offer, audience, proof, and location.
+3. Do not treat one answer as proof. Look for repeated patterns.
+4. Fix your website pages based on what AI tools misunderstand or miss.
+5. Re-test after making meaningful website changes.
+
+Prompt Tests
+
+${rows}
+Weekly Summary
+- What did AI tools understand correctly?
+- What did they miss?
+- Which competitors appeared more clearly?
+- Which page should be improved first?
+- What changed after the latest website update?
+
+Important boundary
+This log does not guarantee rankings, traffic, AI citations, or sales. It helps you test clarity and identify website improvements.`;
+    }
+
+    $("generate").addEventListener("click", generate);
+    $("copy").addEventListener("click", async () => {
+      await navigator.clipboard.writeText($("output").textContent);
+      $("copy").textContent = "Copied";
+      setTimeout(() => $("copy").textContent = "Copy", 1200);
+    });
+    $("download").addEventListener("click", () => {
+      const blob = new Blob([$("output").textContent], { type: "text/plain" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "ai-visibility-prompt-test-log.txt";
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+  </script>
+</body>
+</html>
+
