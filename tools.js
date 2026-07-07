@@ -1,4 +1,4 @@
-﻿const trackEvent = (name, params = {}) => {
+const trackEvent = (name, params = {}) => {
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ event: name, ...params });
 };
@@ -40,6 +40,7 @@ const tools = [
   ["AI Visibility", "Schema JSON-LD Generator", "Site owners", "Need structured data fast", "AI Visibility Fix Kit", "schema-json-ld-generator.html"],
   ["AI Visibility", "Comparison Page Generator", "SaaS founders", "Need competitor comparison pages", "AI Visibility Fix Kit", "comparison-page-generator.html"],
   ["AI Visibility", "AI Answer Prompt Tester", "Marketers", "Need to test how AI describes a product", "AI Visibility Fix Kit", "ai-answer-prompt-tester.html"],
+  ["AI Visibility", "AI Visibility Prompt Test Log Generator", "Founders and marketers", "Need a repeatable way to test how AI understands a brand", "AI Visibility Fix Kit", "prompt-test-log-generator.html"],
   ["AI Visibility", "Brand Mention Tracker Sheet", "Founders", "Need to track AI/community mentions", "AI Visibility Fix Kit", "brand-mention-tracker-sheet.html"],
   ["AI Visibility", "Product Positioning Extractor", "SaaS teams", "Need a clean product description", "AI Visibility Fix Kit", "product-positioning-extractor.html"],
   ["AI Visibility", "Source Citation Checklist", "SEO consultants", "Need pages AI can cite", "AI Visibility Fix Kit", "source-citation-checklist.html"],
