@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aivisibilitytools.github.io/micro-tool-network/</loc>
@@ -41,6 +41,7 @@
   <url><loc>https://aivisibilitytools.github.io/micro-tool-network/schema-json-ld-generator.html</loc><lastmod>2026-07-01</lastmod></url>
   <url><loc>https://aivisibilitytools.github.io/micro-tool-network/comparison-page-generator.html</loc><lastmod>2026-07-01</lastmod></url>
   <url><loc>https://aivisibilitytools.github.io/micro-tool-network/ai-answer-prompt-tester.html</loc><lastmod>2026-07-01</lastmod></url>
+  <url><loc>https://aivisibilitytools.github.io/micro-tool-network/prompt-test-log-generator.html</loc><lastmod>2026-07-07</lastmod></url>
   <url><loc>https://aivisibilitytools.github.io/micro-tool-network/brand-mention-tracker-sheet.html</loc><lastmod>2026-07-01</lastmod></url>
   <url><loc>https://aivisibilitytools.github.io/micro-tool-network/product-positioning-extractor.html</loc><lastmod>2026-07-01</lastmod></url>
   <url><loc>https://aivisibilitytools.github.io/micro-tool-network/source-citation-checklist.html</loc><lastmod>2026-07-01</lastmod></url>
