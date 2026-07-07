@@ -95,4 +95,30 @@ Sections:
 - Reviews requested
 - Photos uploaded
 - Local FAQ added`},
+"google-drive-folder-structure-generator":{t:"Google Drive Folder Structure Generator",h:"Organize small business files before they become impossible to find.",d:"Generate a folder tree, file naming rules, and owner/update rules for teams using Google Drive.",f:["Business type","Main file categories","Team members or roles","Biggest file problem"],o:v=>`Google Drive system for ${v[0]}
+
+Folder structure:
+01_Admin
+02_Sales_and_Customers
+03_Marketing
+04_Operations
+05_Finance
+06_Team_Shared
+99_Archive
+
+Custom folders to add:
+${v[1]}
+
+File naming rule:
+YYYY-MM-DD_Client-or-Project_Document-Type_Version_Owner
+Example: 2026-07-07_Acme_Invoice_v1_Sales.pdf
+
+Owner rules:
+- Roles involved: ${v[2]}
+- One owner per master file
+- Use Archive instead of deleting old versions
+- Review shared folders every Friday
+
+Fix this first:
+${v[3]}`},
 };const id=document.body.dataset.tool,x=data[id],form=document.querySelector("#form"),out=document.querySelector("#out");document.title=x.t;title.textContent=x.h;desc.textContent=x.d;cardTitle.textContent=x.t;form.innerHTML=x.f.map((n,i)=>`<label>${n}<textarea id="f${i}" rows="2" placeholder="${n}"></textarea></label>`).join("")+`<button class="button primary full" id="go" type="button">Generate</button>`;go.onclick=()=>{out.innerHTML="<pre></pre>";out.querySelector("pre").textContent=x.o(x.f.map((_,i)=>document.querySelector("#f"+i).value||x.f[i]));};
